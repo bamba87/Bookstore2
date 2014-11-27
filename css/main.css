@@ -11,10 +11,6 @@ nav, h1, h2 ,h3 {
 	font-family: 'Lobster', cursive;
 }
 
-main {
-	display: block;
-}
-
 /*
 	Sätt saker i den ordningen de kommer i koden, 
 	på så sätt är det mycket lättare att hitta sakerna i css:en.
@@ -66,4 +62,9 @@ header section.top-menu li:active {
 
 header section.top-menu li.active {
 	background-color: #FFFFFF;
+}
+
+main {
+	display: block;
+	padding:135px 0 0;
 }
