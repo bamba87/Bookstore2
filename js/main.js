@@ -1,12 +1,19 @@
 // Vänta tills DOM är redo
 $(function()
 {
+	//Globala variabler som ska kunna nås från alla functions
+	var requestData = {
+		sql: "sql/questions.sql"
+	};
+	var currentSortInfo = {};
+	var outCart = [];
+
 	//Alla saker som ska köras när sidan laddats ska vara i denna funktionen
 	function siteStartup()
 	{
 		$('#addBook').submit(addNewBook);
 	}
-
+	
 	//Denna funktionen tar emot ett object med infon till den svarta lådan och den tar också emot funktionen som ska köras efteråt.
 	//
 	//En bra sak att veta är att när du lägger in en funktion i inparametern "successFunction" är att du ska INTE skriva "doStuff()" utan "doStuff"
@@ -20,7 +27,7 @@ $(function()
 			success: successFunction
 		});
 	}
-	
+
 	function addNewBook()
 	{
     // Ladda inte om sidan när man trycker på knappen
