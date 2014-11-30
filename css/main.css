@@ -71,8 +71,14 @@ header section.top-menu a {
 	color: #000000;
 }
 
+header section.sub-menu {
+	
+}
+
 .sub-menu ul li {
 	display: inline-block;
+	margin-top: 1px;
+	font-size: 13px;
 
 }
 
