@@ -71,6 +71,11 @@ header section.top-menu a {
 	color: #000000;
 }
 
+.sub-menu ul li {
+	display: inline-block;
+
+}
+
 .searchBox {
 }
 
