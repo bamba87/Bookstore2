@@ -82,6 +82,11 @@ header section.sub-menu {
 
 }
 
+.lagerButton {
+	font-size: 20px;
+	font-family: 'Lobster', cursive;
+}
+
 .searchBox {
 }
 
