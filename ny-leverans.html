@@ -48,11 +48,26 @@
 	</header>
 	
 	<main>
-		<ul>
-			<li>
-			<button class="addBook" type="submit" id="addBook">Ny bok</button>
-			</li>
+		<ul class="deliveryTextBox">
+			<li><label for="isbn"><p>ISBN</p></label>
+			<input name="isbn" type="text"></li>
+
+			<li><label for="author"><p>Författare</p></label>
+			<input name="author" type="text"></li>
+
+			<li><label for="bookTitle"><p>Boktitel</p></label>
+			<input name="bookTitle" type="text"></li>
+
+			<li><label for="qty"><p>Antal</p></label>
+			<input name="qty" type="text"></li>
+			
+			<li><label for="fPrice"><p>F-pris</p></label>
+			<input name="fPrice" type="text"></li>
+
+			<li><label for="shelf"><p>Hylla</p></label>
+			<input name="shelf" type="text"></li>
 		</ul>
+		<button class="addNewBookButton" type="submit" id="addNewBook">Lägg till ny bok</button>
 	</main>
 </body>
 </html>
