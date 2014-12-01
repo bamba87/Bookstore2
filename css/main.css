@@ -82,7 +82,7 @@ header section.sub-menu {
 
 }
 
-.headerButton {
+button {
 	font-size: 20px;
 	font-family: 'Lobster', cursive;
 }
