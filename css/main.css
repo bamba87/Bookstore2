@@ -82,6 +82,12 @@ header section.sub-menu {
 	display: inline-block;
 	margin-top: 1px;
 	font-size: 13px;
+	}
+
+.sub-menu {
+
+
+text-align: center;
 
 }
 
@@ -98,8 +104,7 @@ button.addNewBookButton {
 
 }
 
-.searchBox {
-}
+
 
 /*
 	pop-up box
