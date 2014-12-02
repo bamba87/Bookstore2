@@ -16,6 +16,9 @@ nav, h1, h2 ,h3 {
 	på så sätt är det mycket lättare att hitta sakerna i css:en.
 */
 
+/*
+	header area
+*/
 header {
 	position: fixed;
 	top: 0;
@@ -98,6 +101,65 @@ button.addNewBookButton {
 .searchBox {
 }
 
+/*
+	pop-up box
+*/
+section.pop-up {
+	position: fixed;
+	overflow: hidden;
+	top:50%;
+	left: 50%;
+	margin: -35vh 0 0 -25vw;
+	/*padding: 15px;*/
+	height: 70vh;
+	width: 50vw;
+	background-color: #AAAAAA;
+	border:1px solid #000000;
+	border-radius: 5px;
+	box-shadow: 5px 5px 8px #000000;
+}
+
+.close-button {
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	font-family: sans-serif;
+	text-align: center;
+	padding: 3px 15px;
+	border-bottom:1px solid #000000;
+	border-left:1px solid #000000;
+	border-radius: 0 0 0 5px;
+	background-color: #e92323;
+}
+
+.close-button:hover {
+	background-color: #f42f2f;
+}
+
+.close-button:active {
+	background-color: #c11a1a;
+}
+
+.pop-up .content {
+
+}
+
+.pop-up .search-field {
+	display: inline-block;
+	height: auto;
+	background-color: #999999;
+}
+
+.pop-up .search-field input[type=text] {
+	/*height: 50px;*/
+	height: 100%;
+	font-size: 100%;
+}
+
+
+/*
+	main page
+*/
 main {
 	display: block;
 	padding:140px 0 0;
