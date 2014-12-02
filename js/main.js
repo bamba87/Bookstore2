@@ -11,6 +11,9 @@ $(function()
 	//Alla saker som ska köras när sidan laddats ska vara i denna funktionen
 	function siteStartup()
 	{
+		// $("section.pop-up").hide();
+		$(".addNewBookButton").click(addNewBookButtonClick);
+		$(".pop-up div.close-button").click(popUpCloseButtonClick);
 		$('#addBook').submit(addNewBook);
 	}
 	
@@ -32,6 +35,16 @@ $(function()
 	{
     // Ladda inte om sidan när man trycker på knappen
 	return false;
+	}
+
+	function addNewBookButtonClick()
+	{
+		$("section.pop-up.add-book").fadeToggle(150);
+	}
+
+	function popUpCloseButtonClick()
+	{
+		$("section.pop-up").fadeToggle(150);
 	}
 
 	siteStartup();
