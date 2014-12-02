@@ -111,14 +111,14 @@ button.addNewBookButton {
 /*
 	pop-up box
 */
-section.pop-up {
+.pop-up {
 	position: fixed;
 	overflow: hidden;
 	top:50%;
 	left: 50%;
 	margin: -35vh 0 0 -25vw;
-	/*padding: 15px;*/
-	height: 70vh;
+	/*height: 70vh;*/
+	height: auto;
 	width: 50vw;
 	background-color: #AAAAAA;
 	border:1px solid #000000;
@@ -126,7 +126,7 @@ section.pop-up {
 	box-shadow: 5px 5px 8px #000000;
 }
 
-.close-button {
+.pop-up .close-button {
 	cursor: pointer;
 	display: inline-block;
 	float: right;
@@ -139,30 +139,43 @@ section.pop-up {
 	background-color: #e92323;
 }
 
-.close-button:hover {
+.pop-up .close-button:hover {
 	background-color: #f42f2f;
 }
 
-.close-button:active {
+.pop-up .close-button:active {
 	background-color: #c11a1a;
 }
 
 .pop-up .content {
-
-}
-
-.pop-up .search-field {
-	display: inline-block;
-	height: auto;
+	padding: 15px;
+	height: 100%;
 	background-color: #999999;
 }
 
-.pop-up .search-field input[type=text] {
-	/*height: 50px;*/
-	height: 100%;
-	font-size: 100%;
+.pop-up .search-field {
+	padding: 0 0 5px;
+	text-align: center;
 }
 
+.pop-up .search-field input[type=text] {
+	font-size: 100%;
+	width: 55%;
+}
+
+.pop-up .list-display {
+	height: 40vh;
+	overflow: auto;
+	background-color: #FFFFFF;
+}
+
+.pop-up .button-section {
+	display: block;
+	width: 100%;
+	bottom: 10%;
+	padding: 5px 0 0;
+	text-align: center;
+}
 
 /*
 	main page
