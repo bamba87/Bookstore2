@@ -31,6 +31,40 @@ $(function()
 		});
 	}
 
+	/////////////////////////////////////////////////////
+	// fräsigt exempel!
+	/////////////////////////////////////////////////////
+	$(".keyUpSearchInput").keyup(function() {
+		var myValue = $(this).val();
+		$.ajax({
+			url:"libs/sql-ajax-json.php",
+			dataType: "json",
+			data: {
+				sql: "sql/questions.sql",
+				run: "keyUpSearch",
+				isbnLike: myValue
+			},
+			success: function(data) {
+				console.log("epic success: ", data);
+				keyUpResult(data);
+			},
+			error: function(data) {
+				console.log("keyup error: ", data.responseText);
+			}
+		});
+	});
+
+	function keyUpResult(data) {
+		var resultHtml = $("<div/>");
+		for (var i = 0; i < data.length; i++) {
+			resultHtml.append("<p>"+data[i].ISBN+"</p>");
+		}
+		$(".keyUpSearchResult").html(resultHtml);
+	}
+	/////////////////////////////////////////////////////
+	//
+	/////////////////////////////////////////////////////
+
 	function addNewBook()
 	{
     // Ladda inte om sidan när man trycker på knappen
@@ -46,6 +80,7 @@ $(function()
 	{
 		$("section.pop-up").fadeToggle(150);
 	}
+
 
 	siteStartup();
  });

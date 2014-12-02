@@ -6,3 +6,6 @@
 
 #Get all stuff(CHANGE NAME LATER!)
 SELECT * FROM atable;
+
+# keyUpSearch
+SELECT * FROM books WHERE isbn LIKE "{isbnLike}%";
