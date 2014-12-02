@@ -85,10 +85,12 @@ header section.sub-menu {
 	}
 
 .sub-menu {
-
-
 text-align: center;
 
+}
+.sub-menu input {
+	text-align: center;
+	font-family: verdana;
 }
 
 button {
