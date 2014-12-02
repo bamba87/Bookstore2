@@ -11,7 +11,7 @@ $(function()
 	//Alla saker som ska köras när sidan laddats ska vara i denna funktionen
 	function siteStartup()
 	{
-		// $("section.pop-up").hide();
+		$("section.pop-up").hide();
 		$(".addNewBookButton").click(addNewBookButtonClick);
 		$(".pop-up div.close-button").click(popUpCloseButtonClick);
 		$('#addBook').submit(addNewBook);
