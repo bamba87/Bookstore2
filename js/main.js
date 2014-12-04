@@ -14,7 +14,9 @@ $(function()
 		$("section.pop-up").hide();
 		$(".addNewBookButton").click(addNewBookButtonClick);
 		$(".pop-up div.close-button").click(popUpCloseButtonClick);
-		$('#addBook').submit(addNewBook);
+		$(".pop-up.add-book").find("button").not(".search").click(buildNewBookElements);
+
+		// $('#addBook').submit(addNewBook); har ingen koppling
 	}
 	
 	//Denna funktionen tar emot ett object med infon till den svarta lådan och den tar också emot funktionen som ska köras efteråt.
@@ -70,22 +72,36 @@ $(function()
 	//
 	/////////////////////////////////////////////////////
 
-	function addNewBook()
-	{
-    // Ladda inte om sidan när man trycker på knappen
-	return false;
-	}
+	// function addNewBook()
+	// {
+ //    // Ladda inte om sidan när man trycker på knappen
+	// return false;
+	// }
 
-	function addNewBookButtonClick()
+	function addNewBookClick()
 	{
-		$("section.pop-up.add-book").fadeToggle(150);
+		$("section.pop-up.add-book").fadeIn(150);
 	}
 
 	function popUpCloseButtonClick()
 	{
-		$("section.pop-up").fadeToggle(150);
+		$("section.pop-up").fadeOut(150);
 	}
 
+	function buildNewBookElements()
+	{
+		var clickedButton = $(this);
+		console.log("clickedButton: ", clickedButton);
+
+
+
+
+
+		if (clickedButton.hasClass("add-new-book"))
+		{
+			
+		}
+	}
 
 	siteStartup();
  });
