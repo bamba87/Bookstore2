@@ -12,7 +12,8 @@ $(function()
 	function siteStartup()
 	{
 		$("section.pop-up").hide();
-		$(".addNewBookButton").click(addNewBookButtonClick);
+		$(".addNewBook").click(addNewBookClick);
+		$(".finish-delivery").click(finishDeliveryClick);
 		$(".pop-up div.close-button").click(popUpCloseButtonClick);
 		$(".pop-up.add-book").find("button").not(".search").click(buildNewBookElements);
 
@@ -96,11 +97,15 @@ $(function()
 
 
 
-
 		if (clickedButton.hasClass("add-new-book"))
 		{
 			
 		}
+	}
+
+	function finishDeliveryClick()
+	{
+		console.log("wupp!");
 	}
 
 	siteStartup();
