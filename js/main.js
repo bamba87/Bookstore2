@@ -34,7 +34,8 @@ $(function()
 	/////////////////////////////////////////////////////
 	// fräsigt exempel!
 	/////////////////////////////////////////////////////
-	$(".keyUpSearchInput").keyup(function() {
+	$(".keyUpSearchInput").keyup(function()
+	{
 		var myValue = $(this).val();
 		$.ajax({
 			url:"libs/sql-ajax-json.php",
@@ -44,19 +45,23 @@ $(function()
 				run: "keyUpSearch",
 				isbnLike: myValue
 			},
-			success: function(data) {
+			success: function(data)
+			{
 				console.log("epic success: ", data);
 				keyUpResult(data);
 			},
-			error: function(data) {
+			error: function(data)
+			{
 				console.log("keyup error: ", data.responseText);
 			}
 		});
 	});
 
-	function keyUpResult(data) {
+	function keyUpResult(data)
+	{
 		var resultHtml = $("<div/>");
-		for (var i = 0; i < data.length; i++) {
+		for (var i = 0; i < data.length; i++)
+		{
 			resultHtml.append("<p>"+data[i].ISBN+"</p>");
 		}
 		$(".keyUpSearchResult").html(resultHtml);

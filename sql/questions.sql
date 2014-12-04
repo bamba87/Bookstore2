@@ -4,7 +4,7 @@
 # password: mysql
 # database: Bookstore22
 
-#Get all stuff(CHANGE NAME LATER!)
+# Get all stuff(CHANGE NAME LATER!)
 SELECT * FROM atable;
 
 # keyUpSearch
