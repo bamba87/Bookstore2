@@ -49,7 +49,7 @@
 		<section class="keyUpSearch">
 			<input class="keyUpSearchInput" name="isbn" type="text" placeholder="search stuff">	
 			<div class="keyUpSearchResult">
-			</div>		
+			</div>
 		</section>
 	</header>
 
@@ -62,7 +62,7 @@
 		<section class="content">
 			<section class="search-field">
 				<input type="text">
-				<button>
+				<button class="search">
 					Sök
 				</button>
 			</section>
@@ -70,75 +70,53 @@
 
 			</section>
 			<section class="button-section">
-				<button>
+				<button class="add-new-book">
 					Lägg till helt ny bok
 				</button>
-				<button disabled>
+				<button class="add-to-existing-book" disabled>
 					Fyll på lagret för vald bok
 				</button>
 			</section>
-			
 		</section>
 		
 	</section>
 
 	<main>
-		<ul class="deliveryTextBox">
-			<li>
-				<label for="isbn">
-					<p>
-						ISBN
-					</p>
-				</label>
-				<input name="isbn" type="text">
-			</li>
+		<section class="bookRow">
+			<label for="isbn-text-box">
+				ISBN
+			</label>
+			<input id="isbn-text-box" type="text">
 
-			<li>
-				<label for="author">
-					<p>
-						Författare
-					</p>
-				</label>
-				<input name="author" type="text">
-			</li>
+			<label for="author-text-box">
+				Författare
+			</label>
+			<input id="author-text-box" type="text">
 
-			<li>
-				<label for="bookTitle">
-					<p>
-						Boktitel
-					</p>
-				</label>
-				<input name="bookTitle" type="text">
-			</li>
+			<label for="book-title-text-box">
+				Boktitel
+			</label>
+			<input id="book-title-text-box" type="text">
 
-			<li>
-				<label for="qty">
-					<p>
-						Antal
-					</p>
-				</label>
-				<input name="qty" type="text">
-			</li>
-			
-			<li>
-				<label for="fPrice">
-					<p>
-						F-pris
-					</p>
-				</label>
-				<input name="fPrice" type="text">
-			</li>
+			<label for="quantity-text-box">
+				Antal
+			</label>
+			<input id="quantity-text-box" type="text">
 
-			<li>
-				<label for="shelf">
-					<p>
-						Hylla
-					</p>
-				</label>
-				<input name="shelf" type="text">
-			</li>
-		</ul>
-		<button class="addNewBookButton" type="submit" id="addNewBook">
+			<label for="publisher-price-text-box"> <!-- förlagsPris -->
+				Förlags-pris
+			</label>
+			<input id="publisher-price-text-box" type="text">
+
+
+
+			<label for="shelf-text-box">
+				Hylla
+			</label>
+			<input id="shelf-text-box" type="text">
+		</section>
+
+		<button class="addNewBook">
 			Lägg till ny bok
 		</button>
 	</main>

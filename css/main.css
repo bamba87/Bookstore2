@@ -1,3 +1,7 @@
+body{
+	font-family: sans-serif;
+}
+
 .noselect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -91,23 +95,13 @@ text-align: center;
 }
 .sub-menu input{
 	width: 300px;
-	font-family: times;
+	/*font-family: times;*/
 }
 
 button {
 	font-size: 20px;
 	font-family: 'Lobster', cursive;
 }
-
-button.addNewBookButton {
-	display: inline-block;
-	width: 20vw;
-	margin-left: 40vw;
-	margin-top: 5vh;
-
-}
-
-
 
 /*
 	pop-up box
@@ -131,7 +125,6 @@ button.addNewBookButton {
 	cursor: pointer;
 	display: inline-block;
 	float: right;
-	font-family: sans-serif;
 	text-align: center;
 	padding: 3px 15px;
 	border-bottom:1px solid #000000;
@@ -195,5 +188,14 @@ ul li {
 	text-align: center;
 }
 
+section.bookRow {
+	text-align: center;
+}
 
-
+button.addNewBook {
+	display: block;
+	margin: 15px auto 0;
+	/*width: 20vw;*/
+	/*margin-left: 40vw;
+	margin-top: 5vh;*/
+}
